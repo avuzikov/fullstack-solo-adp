@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.969s</div>
+<div class="counter">0.774s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.969s</td>
+<td class="success">0.774s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,8 +90,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>23:36:27.714 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.data_service.DataServiceApplicationTests]: DataServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:36:27.947 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.data_service.DataServiceApplication for test class com.example.data_service.DataServiceApplicationTests
+<pre>00:01:22.584 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.data_service.DataServiceApplicationTests]: DataServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:01:22.776 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.data_service.DataServiceApplication for test class com.example.data_service.DataServiceApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -102,37 +102,37 @@
 
  :: Spring Boot ::                (v3.3.4)
 
-2024-10-15T23:36:28.916+02:00  INFO 23056 --- [data-service] [    Test worker] c.e.d.DataServiceApplicationTests        : Starting DataServiceApplicationTests using Java 21.0.4 with PID 23056 (started by avuzi in C:\Users\avuzi\OneDrive\Desktop\backend_solo\mySolution\data-service)
-2024-10-15T23:36:28.918+02:00 DEBUG 23056 --- [data-service] [    Test worker] c.e.d.DataServiceApplicationTests        : Running with Spring Boot v3.3.4, Spring v6.1.13
-2024-10-15T23:36:28.919+02:00  INFO 23056 --- [data-service] [    Test worker] c.e.d.DataServiceApplicationTests        : The following 1 profile is active: &quot;test&quot;
-2024-10-15T23:36:28.995+02:00 DEBUG 23056 --- [data-service] [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@23e44287
-2024-10-15T23:36:30.299+02:00  INFO 23056 --- [data-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-15T23:36:30.403+02:00  INFO 23056 --- [data-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
-2024-10-15T23:36:31.159+02:00  INFO 23056 --- [data-service] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-15T23:36:31.290+02:00  INFO 23056 --- [data-service] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-10-15T23:36:31.356+02:00  INFO 23056 --- [data-service] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-10-15T23:36:31.935+02:00  INFO 23056 --- [data-service] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-15T23:36:31.985+02:00  INFO 23056 --- [data-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-10-15T23:36:32.430+02:00  INFO 23056 --- [data-service] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/testdb user=SA
-2024-10-15T23:36:32.433+02:00  INFO 23056 --- [data-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-10-15T23:36:32.477+02:00  WARN 23056 --- [data-service] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-10-15T23:36:33.843+02:00  INFO 23056 --- [data-service] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-15T23:36:34.000+02:00  INFO 23056 --- [data-service] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15T23:36:34.868+02:00  WARN 23056 --- [data-service] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-15T23:36:35.047+02:00 DEBUG 23056 --- [data-service] [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
-2024-10-15T23:36:35.284+02:00 DEBUG 23056 --- [data-service] [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-10-15T23:36:35.377+02:00 DEBUG 23056 --- [data-service] [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-10-15T23:36:35.448+02:00 DEBUG 23056 --- [data-service] [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-10-15T23:36:35.537+02:00  INFO 23056 --- [data-service] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testdb'
-2024-10-15T23:36:35.632+02:00  WARN 23056 --- [data-service] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2024-10-16T00:01:23.460+02:00  INFO 8028 --- [data-service] [    Test worker] c.e.d.DataServiceApplicationTests        : Starting DataServiceApplicationTests using Java 21.0.4 with PID 8028 (started by avuzi in C:\Users\avuzi\OneDrive\Desktop\backend_solo\mySolution\data-service)
+2024-10-16T00:01:23.461+02:00 DEBUG 8028 --- [data-service] [    Test worker] c.e.d.DataServiceApplicationTests        : Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-16T00:01:23.462+02:00  INFO 8028 --- [data-service] [    Test worker] c.e.d.DataServiceApplicationTests        : The following 1 profile is active: &quot;test&quot;
+2024-10-16T00:01:23.516+02:00 DEBUG 8028 --- [data-service] [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@23e44287
+2024-10-16T00:01:24.591+02:00  INFO 8028 --- [data-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16T00:01:24.683+02:00  INFO 8028 --- [data-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2024-10-16T00:01:25.522+02:00  INFO 8028 --- [data-service] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16T00:01:25.619+02:00  INFO 8028 --- [data-service] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16T00:01:25.694+02:00  INFO 8028 --- [data-service] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-16T00:01:26.136+02:00  INFO 8028 --- [data-service] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16T00:01:26.183+02:00  INFO 8028 --- [data-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-16T00:01:26.559+02:00  INFO 8028 --- [data-service] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/testdb user=SA
+2024-10-16T00:01:26.563+02:00  INFO 8028 --- [data-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-16T00:01:26.599+02:00  WARN 8028 --- [data-service] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16T00:01:27.712+02:00  INFO 8028 --- [data-service] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16T00:01:27.772+02:00  INFO 8028 --- [data-service] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16T00:01:28.197+02:00  WARN 8028 --- [data-service] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16T00:01:28.229+02:00  WARN 8028 --- [data-service] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: afddde34-cf33-44c2-86a2-f4abf96a4c45
+Using generated security password: 2576ff06-124d-408e-97f6-84e45b68ef11
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-10-15T23:36:35.680+02:00  INFO 23056 --- [data-service] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2024-10-15T23:36:35.882+02:00 DEBUG 23056 --- [data-service] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, DefaultLoginPageGeneratingFilter, DefaultLogoutPageGeneratingFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
-2024-10-15T23:36:35.983+02:00  INFO 23056 --- [data-service] [    Test worker] c.e.d.DataServiceApplicationTests        : Started DataServiceApplicationTests in 7.54 seconds (process running for 10.081)
+2024-10-16T00:01:28.271+02:00  INFO 8028 --- [data-service] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-10-16T00:01:28.474+02:00 DEBUG 8028 --- [data-service] [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-10-16T00:01:28.677+02:00 DEBUG 8028 --- [data-service] [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-16T00:01:28.796+02:00 DEBUG 8028 --- [data-service] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-10-16T00:01:29.150+02:00 DEBUG 8028 --- [data-service] [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-16T00:01:29.259+02:00 DEBUG 8028 --- [data-service] [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-16T00:01:29.349+02:00  INFO 8028 --- [data-service] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testdb'
+2024-10-16T00:01:29.480+02:00  INFO 8028 --- [data-service] [    Test worker] c.e.d.DataServiceApplicationTests        : Started DataServiceApplicationTests in 6.439 seconds (process running for 8.713)
 </pre>
 </span>
 </div>
@@ -154,7 +154,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 15, 2024, 11:36:38 PM</p>
+<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 16, 2024, 12:01:32 AM</p>
 </div>
 </div>
 </body>

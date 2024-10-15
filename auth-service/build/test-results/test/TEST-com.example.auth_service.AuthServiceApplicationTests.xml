@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.auth_service.AuthServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-15T22:02:10" hostname="ALEXPC" time="0.764">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.auth_service.AuthServiceApplicationTests" time="0.764"/>
+  <system-out><![CDATA[00:02:04.146 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.auth_service.AuthServiceApplicationTests]: AuthServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:02:04.278 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.auth_service.AuthServiceApplication for test class com.example.auth_service.AuthServiceApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+2024-10-16T00:02:04.888+02:00  INFO 18948 --- [    Test worker] c.e.a.AuthServiceApplicationTests        : Starting AuthServiceApplicationTests using Java 21.0.4 with PID 18948 (started by avuzi in C:\Users\avuzi\OneDrive\Desktop\backend_solo\mySolution\auth-service)
+2024-10-16T00:02:04.891+02:00  INFO 18948 --- [    Test worker] c.e.a.AuthServiceApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2024-10-16T00:02:04.938+02:00 DEBUG 18948 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4bdc8b5d
+2024-10-16T00:02:05.966+02:00  INFO 18948 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16T00:02:06.044+02:00  INFO 18948 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interfaces.
+2024-10-16T00:02:07.332+02:00  INFO 18948 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16T00:02:07.355+02:00  INFO 18948 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-16T00:02:07.600+02:00  INFO 18948 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:authdb user=SA
+2024-10-16T00:02:07.603+02:00  INFO 18948 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-16T00:02:08.786+02:00  INFO 18948 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16T00:02:09.383+02:00  WARN 18948 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16T00:02:09.425+02:00  WARN 18948 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 23ed9798-34a3-400f-8469-61fe5e52319c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-10-16T00:02:09.622+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-10-16T00:02:09.783+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-16T00:02:09.825+02:00  INFO 18948 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e60d4f4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14091e24, org.springframework.security.web.context.SecurityContextHolderFilter@33d2f9d3, org.springframework.security.web.header.HeaderWriterFilter@519a81dd, org.springframework.web.filter.CorsFilter@5d957cf0, org.springframework.security.web.authentication.logout.LogoutFilter@52b7c1d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55ff64fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@272485a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45ecdd32, org.springframework.security.web.session.SessionManagementFilter@c7b100b, org.springframework.security.web.access.ExceptionTranslationFilter@5687ade6, org.springframework.security.web.access.intercept.AuthorizationFilter@2370c90]
+2024-10-16T00:02:10.079+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-16T00:02:10.128+02:00 DEBUG 18948 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-16T00:02:10.188+02:00  INFO 18948 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:authdb'
+2024-10-16T00:02:10.273+02:00  INFO 18948 --- [    Test worker] c.e.a.AuthServiceApplicationTests        : Started AuthServiceApplicationTests in 5.743 seconds (process running for 7.514)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\avuzi\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.4\3bf5ac1104554908cc623e40e58a00be37c35f36\byte-buddy-agent-1.14.4.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
