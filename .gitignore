@@ -1,0 +1,36 @@
+
+!**/src/main/**/bin/
+!**/src/main/**/build/
+!**/src/main/**/out/
+!**/src/test/**/bin/
+!**/src/test/**/build/
+!**/src/test/**/out/
+!gradle/wrapper/gradle-wrapper.jar
+### IntelliJ IDEA ###
+### NetBeans ###
+### STS ###
+### VS Code ###
+*.iml
+*.ipr
+*.iws
+.apt_generated
+.classpath
+.factorypath
+.gradle
+.idea
+.project
+.settings
+.springBeans
+.sts4-cache
+.vscode/
+/.nb-gradle/
+/data/
+/dist/
+/nbbuild/
+/nbdist/
+/nbproject/private/
+bin/
+build/
+HELP.md
+out/
+src/main/resources/application.properties
