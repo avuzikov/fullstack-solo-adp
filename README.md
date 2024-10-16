@@ -1,6 +1,6 @@
 # Microservices Authentication and Data Management System
 
-This project demonstrates a microservices architecture with two services: an authentication service and a data management service. The system is designed to provide secure user authentication and manage customer data.
+This project demonstrates a microservices architecture with three services: an authentication service, a data management service, and a frontend service. The system is designed to provide secure user authentication, manage customer data, and offer a user-friendly interface.
 
 ## Project Structure
 
@@ -33,19 +33,41 @@ Key features:
 - CRUD operations for customer data
 - JWT token validation for secure access
 
+### Frontend Service
+
+The frontend service provides a user interface for interacting with the auth and data services. It runs on port 3000.
+
+Key features:
+- User registration and login interface
+- Customer management interface
+- React-based single-page application
+- Integration with auth and data services
+
 ## Technologies Used
 
-- Java 21
-- Spring Boot 3.3.4
-- Spring Security
-- JSON Web Tokens (JWT)
-- H2 Database
-- Docker
-- Gradle
+- Backend:
+   - Java 21
+   - Spring Boot 3.3.4
+   - Spring Security
+   - JSON Web Tokens (JWT)
+   - H2 Database
+   - Gradle
+
+- Frontend:
+   - React
+   - TypeScript
+   - Tailwind CSS
+   - Axios for API calls
+
+- Infrastructure:
+   - Docker
+   - Docker Compose
+   - Nginx (for serving the frontend)
 
 ## Prerequisites
 
 - Java Development Kit (JDK) 21
+- Node.js and npm
 - Docker and Docker Compose
 - Gradle
 
@@ -64,6 +86,10 @@ Key features:
    cd ../data-service
    ./gradlew build
    cd ..
+   cd frontend-service
+   npm install
+   npm run build
+   cd ..
    ```
 
 3. Start the services using Docker Compose:
@@ -74,6 +100,15 @@ Key features:
 4. The services will be available at:
     - Auth Service: http://localhost:8081
     - Data Service: http://localhost:8080
+    - Frontend: http://localhost:3000
+
+## Frontend Features
+
+- User Registration: New users can create an account
+- User Login: Existing users can log in to access protected features
+- Customer Management: View, add, and delete customer records
+- Protected Routes: Certain pages are only accessible to authenticated users
+- Responsive Design: The UI is optimized for various screen sizes
 
 ## API Endpoints
 
