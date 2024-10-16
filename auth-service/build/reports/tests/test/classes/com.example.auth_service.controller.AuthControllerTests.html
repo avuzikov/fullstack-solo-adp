@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.481s</div>
+<div class="counter">0.649s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,27 +79,27 @@
 </thead>
 <tr>
 <td class="success">checkStatus_shouldReturnOk()</td>
-<td class="success">0.009s</td>
+<td class="success">0.028s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getToken_withInvalidCredentials_shouldReturnBadRequest()</td>
-<td class="success">0.020s</td>
+<td class="success">0.034s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getToken_withValidCredentials_shouldReturnToken()</td>
-<td class="success">0.022s</td>
+<td class="success">0.039s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">registerUser_withExistingEmail_shouldReturnBadRequest()</td>
-<td class="success">0.412s</td>
+<td class="success">0.517s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">registerUser_withNewEmail_shouldReturnOk()</td>
-<td class="success">0.018s</td>
+<td class="success">0.031s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,8 +107,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-10-16T00:02:11.077+02:00  INFO 18948 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.auth_service.controller.AuthControllerTests]: AuthControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-10-16T00:02:11.129+02:00  INFO 18948 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.auth_service.AuthServiceApplication for test class com.example.auth_service.controller.AuthControllerTests
+<pre>2024-10-16T00:17:18.526+02:00  INFO 17380 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.auth_service.controller.AuthControllerTests]: AuthControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16T00:17:18.561+02:00  INFO 17380 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.auth_service.AuthServiceApplication for test class com.example.auth_service.controller.AuthControllerTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -118,69 +118,69 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.0)
 
-2024-10-16T00:02:11.195+02:00  INFO 18948 --- [    Test worker] c.e.a.controller.AuthControllerTests     : Starting AuthControllerTests using Java 21.0.4 with PID 18948 (started by avuzi in C:\Users\avuzi\OneDrive\Desktop\backend_solo\mySolution\auth-service)
-2024-10-16T00:02:11.197+02:00  INFO 18948 --- [    Test worker] c.e.a.controller.AuthControllerTests     : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-10-16T00:02:11.201+02:00 DEBUG 18948 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@51f31fad
-2024-10-16T00:02:12.143+02:00  WARN 18948 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2024-10-16T00:17:18.612+02:00  INFO 17380 --- [    Test worker] c.e.a.controller.AuthControllerTests     : Starting AuthControllerTests using Java 21.0.4 with PID 17380 (started by avuzi in C:\Users\avuzi\OneDrive\Desktop\backend_solo\mySolution\auth-service)
+2024-10-16T00:17:18.612+02:00  INFO 17380 --- [    Test worker] c.e.a.controller.AuthControllerTests     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-10-16T00:17:18.616+02:00 DEBUG 17380 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ad5f99
+2024-10-16T00:17:19.562+02:00  WARN 17380 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 421fbfb6-8a86-47ec-bb3d-7c50b71c8949
+Using generated security password: 8609cd20-1498-4258-a62c-794c2c6de375
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-10-16T00:02:12.203+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
-2024-10-16T00:02:12.278+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-10-16T00:02:12.292+02:00  INFO 18948 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75c36570, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67857a20, org.springframework.security.web.context.SecurityContextHolderFilter@470c2a7a, org.springframework.security.web.header.HeaderWriterFilter@5016934, org.springframework.web.filter.CorsFilter@238cac6, org.springframework.security.web.authentication.logout.LogoutFilter@240a717d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62b3871, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8eda949, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bcaec2e, org.springframework.security.web.session.SessionManagementFilter@e10809f, org.springframework.security.web.access.ExceptionTranslationFilter@73864c16, org.springframework.security.web.access.intercept.AuthorizationFilter@2b57dc2]
-2024-10-16T00:02:12.358+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-10-16T00:02:12.370+02:00 DEBUG 18948 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-10-16T00:02:12.445+02:00  INFO 18948 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-10-16T00:02:12.445+02:00  INFO 18948 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-10-16T00:02:12.447+02:00  INFO 18948 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
-2024-10-16T00:02:12.468+02:00  INFO 18948 --- [    Test worker] c.e.a.controller.AuthControllerTests     : Started AuthControllerTests in 1.327 seconds (process running for 9.709)
-2024-10-16T00:02:12.623+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /account/register
-2024-10-16T00:02:12.641+02:00 DEBUG 18948 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2024-10-16T00:02:12.667+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
-2024-10-16T00:02:12.669+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
-2024-10-16T00:02:12.671+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /account/register
-2024-10-16T00:02:12.679+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
-2024-10-16T00:02:12.766+02:00 DEBUG 18948 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read &quot;application/json;charset=UTF-8&quot; to [com.example.auth_service.model.User@38950138]
-2024-10-16T00:02:12.794+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-10-16T00:02:12.797+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Email already exists}]
-2024-10-16T00:02:12.905+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /account/token
-2024-10-16T00:02:12.907+02:00 DEBUG 18948 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2024-10-16T00:02:12.907+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
-2024-10-16T00:02:12.907+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
-2024-10-16T00:02:12.908+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
-2024-10-16T00:02:12.908+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /account/token
-2024-10-16T00:02:12.908+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
-2024-10-16T00:02:12.912+02:00 DEBUG 18948 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read &quot;application/json;charset=UTF-8&quot; to [{password=wrongpassword, email=test@example.com}]
-2024-10-16T00:02:12.916+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-10-16T00:02:12.916+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Invalid credentials}]
-2024-10-16T00:02:12.933+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /account/register
-2024-10-16T00:02:12.934+02:00 DEBUG 18948 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2024-10-16T00:02:12.934+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
-2024-10-16T00:02:12.935+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
-2024-10-16T00:02:12.935+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /account/register
-2024-10-16T00:02:12.935+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
-2024-10-16T00:02:12.936+02:00 DEBUG 18948 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read &quot;application/json;charset=UTF-8&quot; to [com.example.auth_service.model.User@6dbe6891]
-2024-10-16T00:02:12.937+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-10-16T00:02:12.939+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=User registered successfully}]
-2024-10-16T00:02:12.959+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /account/token
-2024-10-16T00:02:12.959+02:00 DEBUG 18948 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2024-10-16T00:02:12.961+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
-2024-10-16T00:02:12.961+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
-2024-10-16T00:02:12.961+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
-2024-10-16T00:02:12.961+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /account/token
-2024-10-16T00:02:12.962+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
-2024-10-16T00:02:12.963+02:00 DEBUG 18948 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read &quot;application/json;charset=UTF-8&quot; to [{password=password123, email=test@example.com}]
-2024-10-16T00:02:12.964+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-10-16T00:02:12.964+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{token=test.jwt.token}]
-2024-10-16T00:02:12.975+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /account
-2024-10-16T00:02:12.975+02:00 DEBUG 18948 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2024-10-16T00:02:12.977+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#checkStatus()
-2024-10-16T00:02:12.977+02:00 DEBUG 18948 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /account
-2024-10-16T00:02:12.977+02:00 DEBUG 18948 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#checkStatus()
-2024-10-16T00:02:12.978+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-10-16T00:02:12.978+02:00 DEBUG 18948 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=Auth service is up and running}]
+2024-10-16T00:17:19.642+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-10-16T00:17:19.719+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-16T00:17:19.733+02:00  INFO 17380 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@50e7d8ba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@210e4678, org.springframework.security.web.context.SecurityContextHolderFilter@79690a0a, org.springframework.security.web.header.HeaderWriterFilter@3c0becae, org.springframework.web.filter.CorsFilter@4548bfc7, org.springframework.security.web.authentication.logout.LogoutFilter@2ee949d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@619944a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294aaa6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@557c0b65, org.springframework.security.web.session.SessionManagementFilter@373c367, org.springframework.security.web.access.ExceptionTranslationFilter@13617139, org.springframework.security.web.access.intercept.AuthorizationFilter@34a48013]
+2024-10-16T00:17:19.807+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-16T00:17:19.819+02:00 DEBUG 17380 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-16T00:17:19.896+02:00  INFO 17380 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-10-16T00:17:19.897+02:00  INFO 17380 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-10-16T00:17:19.900+02:00  INFO 17380 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-10-16T00:17:19.920+02:00  INFO 17380 --- [    Test worker] c.e.a.controller.AuthControllerTests     : Started AuthControllerTests in 1.354 seconds (process running for 10.596)
+2024-10-16T00:17:20.072+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /account/register
+2024-10-16T00:17:20.090+02:00 DEBUG 17380 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-10-16T00:17:20.109+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
+2024-10-16T00:17:20.111+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
+2024-10-16T00:17:20.115+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /account/register
+2024-10-16T00:17:20.125+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
+2024-10-16T00:17:20.229+02:00 DEBUG 17380 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read &quot;application/json;charset=UTF-8&quot; to [com.example.auth_service.model.User@57be0d93]
+2024-10-16T00:17:20.274+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-16T00:17:20.275+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Email already exists}]
+2024-10-16T00:17:20.474+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /account/token
+2024-10-16T00:17:20.476+02:00 DEBUG 17380 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-10-16T00:17:20.476+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
+2024-10-16T00:17:20.478+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
+2024-10-16T00:17:20.478+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
+2024-10-16T00:17:20.478+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /account/token
+2024-10-16T00:17:20.480+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
+2024-10-16T00:17:20.488+02:00 DEBUG 17380 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read &quot;application/json;charset=UTF-8&quot; to [{password=wrongpassword, email=test@example.com}]
+2024-10-16T00:17:20.493+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-16T00:17:20.493+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Invalid credentials}]
+2024-10-16T00:17:20.519+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /account/register
+2024-10-16T00:17:20.520+02:00 DEBUG 17380 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-10-16T00:17:20.521+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
+2024-10-16T00:17:20.522+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
+2024-10-16T00:17:20.523+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /account/register
+2024-10-16T00:17:20.523+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#registerUser(User)
+2024-10-16T00:17:20.525+02:00 DEBUG 17380 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read &quot;application/json;charset=UTF-8&quot; to [com.example.auth_service.model.User@728cf276]
+2024-10-16T00:17:20.527+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-16T00:17:20.528+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=User registered successfully}]
+2024-10-16T00:17:20.564+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /account/token
+2024-10-16T00:17:20.564+02:00 DEBUG 17380 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-10-16T00:17:20.565+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
+2024-10-16T00:17:20.566+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
+2024-10-16T00:17:20.566+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
+2024-10-16T00:17:20.566+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /account/token
+2024-10-16T00:17:20.568+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#getToken(Map)
+2024-10-16T00:17:20.570+02:00 DEBUG 17380 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read &quot;application/json;charset=UTF-8&quot; to [{password=password123, email=test@example.com}]
+2024-10-16T00:17:20.574+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-16T00:17:20.574+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{token=test.jwt.token}]
+2024-10-16T00:17:20.600+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /account
+2024-10-16T00:17:20.601+02:00 DEBUG 17380 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-10-16T00:17:20.602+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#checkStatus()
+2024-10-16T00:17:20.603+02:00 DEBUG 17380 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /account
+2024-10-16T00:17:20.604+02:00 DEBUG 17380 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.auth_service.controller.AuthController#checkStatus()
+2024-10-16T00:17:20.605+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-16T00:17:20.606+02:00 DEBUG 17380 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{status=Auth service is up and running}]
 </pre>
 </span>
 </div>
@@ -192,7 +192,7 @@ This generated password is for development use only. Your security configuration
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 16, 2024, 12:02:13 AM</p>
+<a href="http://www.gradle.org">Gradle 8.10.2</a> at Oct 16, 2024, 12:17:20 AM</p>
 </div>
 </div>
 </body>

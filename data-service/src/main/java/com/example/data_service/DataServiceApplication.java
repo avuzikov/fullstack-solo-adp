@@ -1,4 +1,4 @@
-package com.example.data_service;
+git apackage com.example.data_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
