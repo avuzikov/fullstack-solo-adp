@@ -30,10 +30,10 @@ services:
       context: ./frontend-service
       dockerfile: Dockerfile
     ports:
-      - "5173:5173"
+      - "3000:80"
     environment:
-      - VITE_AUTH_SERVICE_URL=http://auth-service:8081
-      - VITE_DATA_SERVICE_URL=http://data-service:8080
+      - REACT_APP_AUTH_SERVICE_URL=http://auth-service:8081
+      - REACT_APP_DATA_SERVICE_URL=http://data-service:8080
     depends_on:
       - auth-service
       - data-service
