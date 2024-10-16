@@ -37,6 +37,12 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 		logger.debug("JwtAuthenticationFilter is processing a request to: {}", request.getRequestURI());
 
+		// Skip authentication for /api endpoint
+		if ("/api".equals(request.getRequestURI())) {
+			filterChain.doFilter(request, response);
+			return;
+		}
+
 		String token = extractToken(request);
 		logger.debug("Extracted token: {}", token);
 
